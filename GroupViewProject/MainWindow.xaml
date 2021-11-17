@@ -1,0 +1,25 @@
+﻿<Window x:Class="GroupViewProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupViewProject"
+        mc:Ignorable="d"
+        Title="Group View" Height="512.461" Width="932.754">
+    <Canvas Background="White">
+        <Label Content="" FontFamily="Arial" FontSize="18" Width="925" Background="#FF7741D6" Height="481" />
+        <Label Content="Название специальности:" Canvas.Left="68" Canvas.Top="84" FontFamily="Arial" FontSize="18" />
+        <TextBox x:Name="tbNameGroup" Height="33" Width="230" Canvas.Left="68" Canvas.Top="115" FontFamily="Arial" FontSize="18" />
+        <TextBox x:Name="tbNumberGroup" Height="33" Width="230" Canvas.Left="68" Canvas.Top="193" FontFamily="Arial" FontSize="18" />
+        <TextBox x:Name="tbCurator" Height="33" Width="230" Canvas.Left="68" Canvas.Top="275" FontFamily="Arial" FontSize="18" BorderBrush="#FFDC782B" OpacityMask="Black" />
+        <Label Content="Номер группы:" Canvas.Left="68" Canvas.Top="167" FontFamily="Arial" FontSize="18" />
+        <Label Content="ФИО Куратора:" Canvas.Left="68" Canvas.Top="250" FontFamily="Arial" FontSize="18" />
+        <TextBlock x:Name="tbIdGroup" Height="24" Width="227" Canvas.Left="69" Canvas.Top="45" FontFamily="Arial" FontSize="18" Background="White" />
+        <Label Content="Id группы:" Canvas.Left="68" Canvas.Top="14" FontFamily="Arial" FontSize="18" />
+        <Button x:Name="btnAdd" Content="Добавить" Height="44" Width="144" Canvas.Left="102" Canvas.Top="323" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Add_Click" FontFamily="Arial" FontSize="18" BorderBrush="White" Background="#FF5B2BDC"/>
+        <Button x:Name="Del" Content="Удалить" Height="44" Width="144" Canvas.Left="102" Canvas.Top="427" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Del_Click" FontFamily="Arial" FontSize="18" BorderBrush="White" Background="#FF5B2BDC"/>
+        <Button x:Name="Upd" Content="Изменить" Height="44" Width="144" Canvas.Left="102" Canvas.Top="372" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Upd_Click" FontFamily="Arial" FontSize="18" BorderBrush="White" Background="#FF5B2BDC"/>
+        <Label Content="Список групп:" Canvas.Left="406" Canvas.Top="14" FontFamily="Arial" FontSize="18" />
+        <DataGrid x:Name="dbViewGroup" Height="308" Canvas.Left="406" Canvas.Top="59" Width="509" SelectionChanged="dbViewGroup_SelectionChanged" FontFamily="Arial" FontSize="18" Background="#FF76FF69"/>
+    </Canvas>
+</Window>
